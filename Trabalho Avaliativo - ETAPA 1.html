@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<!-- lang: para que o navegador identifique o idioma da página -->
+<html lang="pt-br">
+<head>
+    <title>Cadastro de Treinadores Pokémon</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- header, nav, main e footer são tags semânticas: usadas para organizar de acordo com o propósito de cada elemento -->
+
+    <header>
+        <table>
+            <tr>
+                <td>
+                    <!-- código que adiciona uma imagem -->
+                    <img src="pokemonbanner.jpg" class="banner">
+                </td>
+            </tr>
+        </table>
+    </header>
+
+    <!-- nav para representar uma seção de links -->
+    <nav>
+        <!-- tabela com uma linha contendo um sumário de links -->
+        <table >
+            <tr>
+                <td>
+                    <!-- atributo target serve pra abir link em outra aba -->
+                    <a href="https://bulbapedia.bulbagarden.net/wiki/List_of_Pokémon_by_National_Pokédex_number" target="_blank" class="link_border">Pokédex</a>
+                    <a href="https://bulbapedia.bulbagarden.net/wiki/Category:Games" target="_blank" class="link_border">Jogos</a>
+                    <a href="https://bulbapedia.bulbagarden.net/wiki/Category:Anime" target="_blank" class="link_border">Anime</a>
+                    <a href="https://bulbapedia.bulbagarden.net/wiki/Category:Characters" target="_blank">Personagens</a>
+                </td>
+            </tr>
+        </table>
+    </nav>
+
+    <main>
+        <!-- tabela com o formulario -->
+        <table>
+            <tr >
+                <td>
+                    <h1>
+                        Cadastro de treinador pokémon
+                    </h1>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <form>
+                        <!-- placeholder serve para colocar o nome dentro do input -->
+                        <div>
+                            <input type="text" placeholder="Nome" >
+    
+                            <input type="text" placeholder="Sobrenome">
+                        </div>
+
+                        <input type="email" placeholder="E-Mail">
+
+                        <input type="password" name="senha" placeholder="Senha">
+
+                        <!-- label é o rótulo do input, permite clicar no texto e selecionar campo de texto -->
+                        <label for="data" class="form_data">
+                            <h4>
+                                Data de nascimento
+                            </h4>
+
+                            <input type="date" id="data">
+                        </label>
+                        
+                        <h4>
+                            Gênero
+                        </h4>
+
+                        <div class="radio_container">
+                            <label for="opcao1">
+                                <input type="radio" name="genero" id="opcao1">
+                                Feminino
+                            </label>
+            
+                            <label for="opcao2">
+                                <input type="radio" name="genero" id="opcao2">
+                                Masculino
+                            </label>
+            
+                            <label for="opcao3">
+                                <input type="radio" name="genero" id="opcao3">
+                                Neutro
+                            </label>
+                        </div>
+                        
+        
+                        <input type="submit" value="Cadastre-se">
+                    </form>
+                </td>
+            </tr>
+        </table>
+    </main>
+
+    <footer>
+        <!-- tabela com rodape -->
+        <table>
+            <tr>
+                <td>
+                    <p>
+                        copyright@2022 - Todos os direitos reservados a The Pokémon Company. Contato: bruno.joseph@escolar.ifrn.edu.br
+                    </p>
+                </td>
+            </tr>
+        </table>
+    </footer>
+</body>
+</html>
