@@ -9,8 +9,11 @@
     <!-- header, nav, main e footer são tags semânticas: usadas para organizar de acordo com o propósito de cada elemento -->
 
     <header>
+        <!-- define a tabela -->
         <table>
+            <!-- table row: define cada linha da tabela -->
             <tr>
+                <!-- table data: define cada célula da linha -->
                 <td>
                     <!-- código que adiciona uma imagem -->
                     <img src="pokemonbanner.jpg" class="banner">
@@ -40,15 +43,18 @@
         <table>
             <tr >
                 <td>
+                    <!-- tag de título principal -->
                     <h1>
                         Cadastro de treinador pokémon
                     </h1>
                 </td>
             </tr>
+
             <tr>
                 <td>
                     <form>
                         <!-- placeholder serve para colocar o nome dentro do input -->
+                        <!-- div é um container genérico, usado para organizar o layout -->
                         <div>
                             <input type="text" placeholder="Nome" >
     
@@ -72,6 +78,7 @@
                             Gênero
                         </h4>
 
+                        <!-- todos os inputs tem o mesmo "name" pra que apenas um seja selecionado por vez -->
                         <div class="radio_container">
                             <label for="opcao1">
                                 <input type="radio" name="genero" id="opcao1">
